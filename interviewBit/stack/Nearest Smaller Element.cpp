@@ -32,7 +32,7 @@ vector<int> Solution::prevSmaller(vector<int> &A) {
     return ans;
 }
 
-Algorithm:
+// Algorithm:
 
 // Let input sequence be 'arr[]' and size of array be 'n'
 
