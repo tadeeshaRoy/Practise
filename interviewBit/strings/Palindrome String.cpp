@@ -21,7 +21,7 @@ int Solution::isPalindrome(string A) {
     for(int i=0;i<A.length();i++)
     {
         if(isalnum(A[i]))  //not isalpha because 'alphanumeric' from question.
-            B.push_back(tolower(A[i])); // tolower for homogeneity
+            B.push_back(tolower(A[i])); // tolower is for homogeneity
     }
     
     int n = B.size();
