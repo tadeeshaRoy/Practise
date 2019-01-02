@@ -13,6 +13,8 @@ Output : 3
 
 DO NOT USE SQRT FUNCTION FROM STANDARD LIBRARY
 
+https://www.geeksforgeeks.org/square-root-of-an-integer/
+
 */
 
 int Solution::sqrt(int A) {
