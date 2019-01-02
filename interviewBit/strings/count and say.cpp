@@ -18,6 +18,8 @@ Example:
 if n = 2,
 the sequence is 11.
 
+https://www.geeksforgeeks.org/look-and-say-sequence/
+
 */
 
 string Solution::countAndSay(int A) {
