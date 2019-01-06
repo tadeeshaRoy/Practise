@@ -45,3 +45,27 @@ if(rev > (INT_MAX/10) || rev==(INT_MAX/10) && digit>(INT_MAX%10))
             return 0;
             
 */
+
+// easier one, to test
+
+int Solution::reverse(int A) {
+    // Do not write main() function.
+    // Do not read input, instead use the arguments to the function.
+    // Do not print the output, instead return values as specified
+    // Still have a doubt. Checkout www.interviewbit.com/pages/sample_codes/ for more details
+
+     long long int rev=0,rem;
+   
+    while(A)
+    {
+        rem=1LL*(A%10);
+        rev=rev*10+rem;
+        A=A/10;
+        if(rev>INT_MAX || rev<INT_MIN)
+        return 0;
+    }
+    return rev;
+    
+}
+
+//we need to check rev does not exceed limits after multiplied by 10
