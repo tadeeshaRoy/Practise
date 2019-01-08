@@ -14,6 +14,10 @@ GCD(m, n) : 3
 https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
 */
 
+
+//One line code:
+// return B ? gcd(B,A%B) : A;
+
 int Solution::gcd(int A, int B) {
     
     if(A==0) return B;
