@@ -12,6 +12,8 @@ n : 9
 GCD(m, n) : 3 
 
 https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
+https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
+https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/?fbclid=IwAR2bFW6CguRTJ2e1buFdLAgp2yvJLMtymD7E3iELVqAgPbboUXP6yTRgXoI
 */
 
 
