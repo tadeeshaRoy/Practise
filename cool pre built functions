@@ -1,1 +1,22 @@
 Search for an element in log N time -> binary_search(A.begin(),A.end(),4)
+<=x -> vector<int>::iterator it = lower_bound(A.begin(), A.end(), x) //first element less than or equal to 
+>=x -> vector<int>::iterator it2 = upper_bound(A.begin(), A.end(), x) ////first element greater than or equal to 
+also if it = 5 and it2 = 9 then:
+cout<< it2 - it; output: 4 // if you want **count** of numbers in an array like count of 100 in the following array:
+// 2,4,11,14,100,100,100,100,124 -> 4 times cz it = 5 and it2 = 9 
+//iterators are pointers in a vector 
+
+
+can pass a comparater function in sort function to control the sorting:
+
+bool f(int x, int y)
+{
+    return x > y;
+}
+
+sort(A.begin(), A.end(), f) // sort in decending order
+// and print the same to sort it
+
+vector<int>::iterator it4;
+for(it4 = A.begin(); it4 !=A.end(); it4++)
+    cout<< *it4;
