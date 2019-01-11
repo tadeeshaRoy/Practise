@@ -19,7 +19,7 @@
 vector<int> Solution::prevSmaller(vector<int> &A) {
     
     int n=A.size();
-    vector<int> ans(n,-1);
+    vector<int> ans(n,-1);  //remember to initialize else you can't asssign like ans[i] in a vector
     stack<int> st;
     
     for(int i=0;i<n;i++)
