@@ -32,3 +32,4 @@ if(rev > (INT_MAX/10) || rev==(INT_MAX/10) && digit>(INT_MAX%10))
 https://www.interviewbit.com/problems/reverse-integer/
 https://github.com/tadeeshaRoy/Practise/blob/master/interviewBit/math/reverse%20number.cpp
 
+6. modulo takes sign of first operand: https://www.quora.com/C-Programming-How-does-the-modulus-operator-work-when-we-divide-a-smaller-number-by-a-larger-number-For-example-3-5-or-5-10
