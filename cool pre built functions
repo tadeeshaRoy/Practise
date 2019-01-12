@@ -1,13 +1,14 @@
-Search for an element in log N time -> binary_search(A.begin(),A.end(),4)
-<=x -> vector<int>::iterator it = lower_bound(A.begin(), A.end(), x) //first element less than or equal to 
->=x -> vector<int>::iterator it2 = upper_bound(A.begin(), A.end(), x) ////first element greater than or equal to 
-also if it = 5 and it2 = 9 then:
+https://www.youtube.com/watch?v=g-1Cn3ccwXY
+
+1. Search for an element in log N time -> binary_search(A.begin(),A.end(),4) //include algorithms.h
+2. <=x -> vector<int>::iterator it = lower_bound(A.begin(), A.end(), x) //first element less than or equal to in log n (for sorting) time
+3. >=x -> vector<int>::iterator it2 = upper_bound(A.begin(), A.end(), x) ////first element greater than or equal to in log n (for sorting) time
+4. also if it = 5 and it2 = 9 then:
 cout<< it2 - it; output: 4 // if you want **count** of numbers in an array like count of 100 in the following array:
-// 2,4,11,14,100,100,100,100,124 -> 4 times cz it = 5 and it2 = 9 
-//iterators are pointers in a vector 
+// 2,4,11,14,100,100,100,100,124 -> 4 times cz it = 5 and it2 = 9 //iterators are pointers in a vector 
 
 
-can pass a comparater function in sort function to control the sorting:
+5. can pass a comparater function in sort function to control the sorting:
 
 bool f(int x, int y)
 {
@@ -20,3 +21,55 @@ sort(A.begin(), A.end(), f) // sort in decending order
 vector<int>::iterator it4;
 for(it4 = A.begin(); it4 !=A.end(); it4++)
     cout<< *it4;
+    
+6. We can modify the above iteration as:
+
+for(int x: A)    //x in vector A
+    cout<<x<<" ";
+    
+7. Also instead of vector iterator for upper and lower bounds,
+
+auto it = lower_bound(A.begin(), A.end(), 100) // because argument is a vector so C++ is intelligent enough to make it an iterator
+
+8. For updating values while we iterate, add 'by reference -> &':
+
+for(int &x: A)
+    x++;
+
+9. For random order, use sets: // include set.h
+
+set<int> s;
+s.insert(1);  //each operation in log n time
+s.insert(4);
+
+    a. set internally maintains ascending order sequence. //each operation in log n time
+
+    b. auto it = s.find(-1); // to find an element. if it==s.end() then element is not found
+
+    c. first number in a set less than x:     auto it2 = s.lower_bound(x);
+    (Since it is already sorted here, lower_bound is already a function in class set,in contrast to vector where it is a separate function)
+       first number in a set greater than x:     auto it2 = s.upper_bound(x);
+    d. erase a number in a set in log n time: s.erase(x);
+    e. always sorted so can find the next greater element in log n time
+    
+10. Maps //include map
+
+map<int, int> A; 
+A[1] = 100;
+A[2] = 9;
+
+a. How many times 'a' occurs in a string:
+
+map<char, int> cnt;
+string x = "well what a day it would have been!";
+
+for (char c : x)
+    cnt[c]++;
+ cout<<cnt['a']<<cnt['t'];
+ 
+ b. find/delete in log n time: A.find(x) and A.erase(x)
+ 
+ building a map will be proportional to the data
+ 
+ 
+ 
