@@ -1,3 +1,7 @@
+bonus: This header file works for almost all STL: https://www.geeksforgeeks.org/bitsstdc-h-c/
+
+<bits/stdc++.h>
+
 1. Can’t access a vector if memory is not initialized like:
 
 vector<int> n;
