@@ -56,10 +56,11 @@ int main() {
 	cin>>t;
 	while(t--)
 	{
-	    int n, k=0; 
-	    float sum=0,res=0, cnt=0, e;
+	    int n,k; 
+	    long sum=0, cnt=0, e; float res;double res1;
 	    cin>>n>>k;
-	    vector<float> arr;
+	    vector<int> arr;
+	    string r;
 	    for(int i=0;i<n;i++)
 	    {
 	        cin>>e;
@@ -72,7 +73,10 @@ int main() {
     	      cnt++;
     	  }
     	res=(float)sum/(float)cnt;
-	    cout<<res<<endl;
+    	//res+=0.000000;
+    	r=to_string(res);
+    	//res1=stof(r);
+	    cout<<r<<endl;
 	}
 	return 0;
 }
