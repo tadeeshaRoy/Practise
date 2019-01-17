@@ -56,27 +56,28 @@ int main() {
 	cin>>t;
 	while(t--)
 	{
-	    int n,k; 
-	    long sum=0, cnt=0, e; float res;double res1;
+	    int n=0,k=0; 
+	    long int cnt=0, e=0; double res=0, sum=0;
 	    cin>>n>>k;
-	    vector<int> arr;
-	    string r;
+	    vector<double> arr;
 	    for(int i=0;i<n;i++)
 	    {
 	        cin>>e;
 	        arr.push_back(e);
 	    }
 	    sort(arr.begin(),arr.end());
+	    //for(int i=0;i<n;i++)
+	      //  cout<<arr[i]<<" ";
+	   //cout<<endl;
 	    for(int i=k;i<(n-k);i++)
     	  {
     	      sum+=arr[i];
     	      cnt++;
     	  }
-    	res=(float)sum/(float)cnt;
-    	//res+=0.000000;
-    	r=to_string(res);
-    	//res1=stof(r);
-	    cout<<r<<endl;
+    	  //cout<<sum<<" "<<cnt<<endl;
+    	res=(double)sum/(double)cnt;
+	    cout << fixed << setprecision(6) << res;
+	    cout<<endl;
 	}
 	return 0;
 }
