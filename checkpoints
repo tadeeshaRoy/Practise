@@ -46,3 +46,4 @@ https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio
 
 8. when it involves precision: cout << fixed << setprecision(6) << res; (https://stackoverflow.com/questions/14432043/float-formatting-in-c)
 
+9. Priority queue: https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/
