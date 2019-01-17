@@ -54,17 +54,18 @@ int main() {
 	    string A;cin>>A;
 	    int l=A.size();
 	    vector<char> res;
-	    for(int i=0;i<l;i++)
+	    for(int i=(l-1);i>=0;i--)
 	    {
-	        if((A[i]=='C'||A[i]=='?') && (A[i+1]=='H'||A[i+1]=='?') &&
-	        (A[i+2]=='E'||A[i+2]=='?')&&(A[i+3]=='F'||A[i+3]=='?'))
+	        if((A[i]=='F'||A[i]=='?') && (A[i-1]=='E'||A[i-1]=='?') &&
+	        (A[i-2]=='H'||A[i-2]=='?')&&(A[i-3]=='C'||A[i-3]=='?'))
 	        {
-	            res.push_back('C');res.push_back('H');res.push_back('E');res.push_back('F');
-	            i+=3;
+	            res.push_back('F');res.push_back('E');res.push_back('H');res.push_back('C');
+	            i-=3;
 	        }
 	        else if(A[i]=='?') res.push_back('A');
 	        else res.push_back(A[i]);
 	    }
+	    reverse(res.begin(),res.end());
 	    for(int i=0;i<l;i++)
 	        cout<<res[i];
 	    cout<<endl;
