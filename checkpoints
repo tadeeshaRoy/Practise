@@ -41,3 +41,6 @@ https://github.com/tadeeshaRoy/Practise/blob/master/interviewBit/math/reverse%20
 
 7. ios_base::sync_with_stdio(false); Sets whether the standard C++ streams are synchronized to the standard C streams after each input/output operation.
 https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio
+
+8. when it involves precision: cout << fixed << setprecision(6) << res; (https://stackoverflow.com/questions/14432043/float-formatting-in-c)
+
