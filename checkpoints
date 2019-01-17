@@ -2,6 +2,8 @@ bonus: This header file works for almost all STL: https://www.geeksforgeeks.org/
 
 <bits/stdc++.h>
 
+**ALWAYS CHECK WITH LARGE INPUTS!!
+also cases like in 'many chef' CHEFA is lexicographically greater than ACHEF.. these small test cases are real game changers
 
 1. Can’t access a vector if memory is not initialized like:
 
