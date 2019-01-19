@@ -41,7 +41,7 @@ string Solution::countAndSay(int A) {
                 cnt = 1;    //missed this on revision
             }
             
-            else cnt++;
+            else cnt++; //this too!
         }
         str = tmp;
     }
