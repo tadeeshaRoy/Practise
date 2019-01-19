@@ -36,7 +36,7 @@ int Solution::evalRPN(vector<string> &A) {
                     break;
             }
         }
-        else
+        else //u missed this else once!
             s.push(atoi(A[i].c_str()));  //atoi is a function to convert a convertible string to integer. c_str converts a 
         //string in a format where c functions can understand since Strings in C and C++ are different.
     }
