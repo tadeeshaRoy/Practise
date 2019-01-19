@@ -38,7 +38,7 @@ string Solution::countAndSay(int A) {
             {
                 tmp+= cnt + '0';           //not tmp = cnt + '0' else it will overwrite the previous tmp chars
                 tmp+=str[j-1];
-                cnt = 1;
+                cnt = 1;    //missed this on revision
             }
             
             else cnt++;
