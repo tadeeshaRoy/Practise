@@ -18,6 +18,8 @@ Sieve of Eratosthenes
 https://www.youtube.com/watch?v=eKp56OLhoQs
 */
 
+//Array+vector
+
 vector<int> Solution::sieve(int A) {
     vector<int> res;
     int *primes = new int [A+1];
@@ -31,6 +33,29 @@ vector<int> Solution::sieve(int A) {
         if(primes[i]==1)
         {
             for(int j=2;i*j<A;j++)
+                primes[i*j]=0;
+        }
+    }
+    for(int i=0;i<A;i++)
+    {
+        if(primes[i]==1)
+            res.push_back(i);
+    }
+    return res;
+}
+
+//only vector
+
+vector<int> Solution::sieve(int A) {
+    vector<int> primes,res;
+    for(int i=0;i<A;i++)
+        primes.push_back(1);
+    primes[0]=0;primes[1]=0;
+    for(int i=2;i<sqrt(A);i++)
+    {
+        if(primes[i]==1)
+        {
+            for(int j=2;(i*j)<A;j++)
                 primes[i*j]=0;
         }
     }
