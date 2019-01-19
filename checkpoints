@@ -49,3 +49,6 @@ https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio
 9. Priority queue: https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/
 
 10. avoid overflow in binary search: mid=(high-low)/2 + low;
+
+11. Check alphabets: isalpha(A[i]). Check number: isdigit(A[i]). Check alphanumeric: isalnum(A[i]). : https://www.geeksforgeeks.org/isalpha-isdigit-functions-c-example/
+
