@@ -1,7 +1,8 @@
 /*
 Sergey has made N measurements. Now, he wants to know the average value of the measurements made.
-
-In order to make the average value a better representative of the measurements, before calculating the average, he wants first to remove the highest K and the lowest K measurements. After that, he will calculate the average value among the remaining N - 2K measurements.
+In order to make the average value a better representative of the measurements, before calculating the average, 
+he wants first to remove the highest K and the lowest K measurements. 
+After that, he will calculate the average value among the remaining N - 2K measurements.
 
 Could you help Sergey to find the average value he will get after these manipulations?
 
@@ -40,11 +41,13 @@ Output:
 5.400000
 1.000000
 Explanation
-Example case 1. After removing 1 greatest and 1 lowest measurement, we get the set {2, 9, 1}. The average value in this set is (2+9+1)/3=4.
+Example case 1. After removing 1 greatest and 1 lowest measurement, we get the set {2, 9, 1}. 
+The average value in this set is (2+9+1)/3=4.
 
 Example case 2. The average value in the set {2, 9, -10, 25, 1} is (2+9-10+25+1)/5=5.4.
 
-Example case 3. After removing the 1 largest and smallest measurements, Sergey will be left with only one measurement, i.e. 1. Average of this is 1 itself.
+Example case 3. After removing the 1 largest and smallest measurements, 
+Sergey will be left with only one measurement, i.e. 1. Average of this is 1 itself.
 */
 
 #include <iostream>
