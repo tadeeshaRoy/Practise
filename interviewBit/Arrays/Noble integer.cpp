@@ -18,12 +18,12 @@ int Solution::solve(vector<int> &A) {
     
     for(int i=0;i<l;i++)
     {
-        if(A[i]==A[i+1])
+        if(A[i]==A[i+1]) //catch here for inputs like 11111112
             continue;
         if(A[i]==l-i-1)
             return 1;
     }
-    if(A[l-1]==0)
+    if(A[l-1]==0) 
         return 1;
     return -1;
 }
