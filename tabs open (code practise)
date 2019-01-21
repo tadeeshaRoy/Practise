@@ -1,0 +1,83 @@
+https://ghcindia.anitab.org
+
+http://www.cplusplus.com/forum/general/200060/
+
+https://www.geeksforgeeks.org/find-the-largest-subarray-with-0-sum/
+
+https://ghcindia.anitab.org/ghci-18-resume-database-is-now-open/
+
+https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/
+
+https://www.codechef.com/FLMOCK01/problems/CSUB?fbclid=IwAR0Ic7uf3KFqTNUVizXV0HX6IqnqSoOuCk3AajBXseN0kGefcm8dBL1Kxvw
+
+https://github.com/deepak216/codechef_solutions/blob/master/codechef%20solution/count%20substring.c
+
+https://projecteuler.net/
+
+https://math.stackexchange.com/
+
+https://www.codechef.com/FLMOCK04/problems/RAINBOWA
+
+https://www.geeksforgeeks.org/implement-min-heap-using-stl/#highlighter_195286
+
+https://www.geeksforgeeks.org/iterators-c-stl/
+
+https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
+
+https://www.geeksforgeeks.org/print-level-order-traversal-line-line/
+
+https://www.geeksforgeeks.org/level-order-traversal-line-line-set-2-using-two-queues/
+
+https://www.geeksforgeeks.org/level-order-tree-traversal/
+
+https://www.youtube.com/watch?v=5u7n4jWx5r0
+
+https://leetcode.com/problems/generate-parentheses/
+
+https://www.pyimagesearch.com/pyimagesearch-gurus/
+
+http://www.fredosaurus.com/notes-cpp/newdelete/50dynamalloc.html
+
+http://www.cplusplus.com/doc/tutorial/dynamic/
+
+https://stackoverflow.com/questions/4029870/how-to-create-a-dynamic-array-of-integers
+
+https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
+
+https://github.com/tadeeshaRoy/Practise/blob/master/interviewBit/Binary%20Search/Optimized%20Rotated%20Sorted%20Array%20Search%20using%20one%20binary%20search.cpp
+
+https://www.geeksforgeeks.org/merge-k-sorted-arrays-set-2-different-sized-arrays/
+
+https://photos.google.com/u/1/albums
+
+https://drive.google.com/drive/u/1/my-drive
+
+
+
+#include <iostream>
+#include<stdio.h>
+#include<string.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	string A;
+    int cnt=0;
+    cin>>A;int l=A.length();//cout<<l;
+    for(int i=0;i<l;i++)
+       cout<<A[i];
+    cout<<endl;
+    for(int i=0;i<l;i++)
+    {
+        //cout<<i;
+        if(A[i]=='|')
+        {
+            //cout<<"here";
+            cnt++;
+        }
+    }
+    cout<<cnt;
+    return 0;
+}
+
+
