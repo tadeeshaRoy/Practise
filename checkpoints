@@ -13,25 +13,27 @@ n[2]=1 // can’t do this
 vector<int> n (m);
 n[2]=1 // can do this 
 
+2. Whenever you pass vector to a function, pass it as a reference. While arrays point to addresses and hence does not need reference, 
+vectors are like char, int which need referencing to access the same memory location.
 
-2. && is logical and & is bitwise:
+3. && is logical and & is bitwise:
 
 if(a>0 && b>0) 
 
 if(4&5)
 
-3. u should use (r-l)/2 +l
+4. u should use (r-l)/2 +l
 and l+r/2
 both give diff answer in case of even num,ber
 so u should be careful;l what to use when
 
-4. again one thing u should take care if u use vector:
+5. again one thing u should take care if u use vector:
 if u are doing :
 vector<int> v; than u can not use v[i]="value" to assign a value u will get segmentation fault
 vector<int > v(n): what this do is create a vector of size n with all its value assign to 0.: let say n=5 than our vector value is 0 0 0 0 0 u can assign v[i]='value' in this case one more things if u do : vector<int> v(n); v.push_back(lets say value from 1 to 5) than your vector will become 0 0 0 0 0 1 2 3 4 5 so you will have 10 element.
 to avoid this 10 element situation first u need to clear the vector: v.clear() after that if u do push_back, tahn u will have only 5 el;ement 1 2 3 4 5
 
-5. check overflow
+6. check overflow
 
 if(rev > (INT_MAX/10) || rev==(INT_MAX/10) && digit>(INT_MAX%10))
             return 0;
@@ -39,16 +41,15 @@ if(rev > (INT_MAX/10) || rev==(INT_MAX/10) && digit>(INT_MAX%10))
 https://www.interviewbit.com/problems/reverse-integer/
 https://github.com/tadeeshaRoy/Practise/blob/master/interviewBit/math/reverse%20number.cpp
 
-6. modulo takes sign of first operand: https://www.quora.com/C-Programming-How-does-the-modulus-operator-work-when-we-divide-a-smaller-number-by-a-larger-number-For-example-3-5-or-5-10
+7. modulo takes sign of first operand: https://www.quora.com/C-Programming-How-does-the-modulus-operator-work-when-we-divide-a-smaller-number-by-a-larger-number-For-example-3-5-or-5-10
 
-7. ios_base::sync_with_stdio(false); Sets whether the standard C++ streams are synchronized to the standard C streams after each input/output operation.
+8. ios_base::sync_with_stdio(false); Sets whether the standard C++ streams are synchronized to the standard C streams after each input/output operation.
 https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio
 
-8. when it involves precision: cout << fixed << setprecision(6) << res; (https://stackoverflow.com/questions/14432043/float-formatting-in-c)
+9. when it involves precision: cout << fixed << setprecision(6) << res; (https://stackoverflow.com/questions/14432043/float-formatting-in-c)
 
-9. Priority queue: https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/
+10. Priority queue: https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/
 
-10. avoid overflow in binary search: mid=(high-low)/2 + low;
+11. avoid overflow in binary search: mid=(high-low)/2 + low;
 
-11. Check alphabets: isalpha(A[i]). Check number: isdigit(A[i]). Check alphanumeric: isalnum(A[i]). : https://www.geeksforgeeks.org/isalpha-isdigit-functions-c-example/
-
+12. Check alphabets: isalpha(A[i]). Check number: isdigit(A[i]). Check alphanumeric: isalnum(A[i]). : https://www.geeksforgeeks.org/isalpha-isdigit-functions-c-example/
