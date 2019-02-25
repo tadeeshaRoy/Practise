@@ -53,3 +53,5 @@ https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio
 11. avoid overflow in binary search: mid=(high-low)/2 + low;
 
 12. Check alphabets: isalpha(A[i]). Check number: isdigit(A[i]). Check alphanumeric: isalnum(A[i]). : https://www.geeksforgeeks.org/isalpha-isdigit-functions-c-example/
+
+13. https://www.geeksforgeeks.org/c-magicians-stl-algorithms/ 
