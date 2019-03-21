@@ -83,7 +83,7 @@ ListNode* Solution::mergeTwoLists(ListNode* A, ListNode* B) {
 }
 
 
-//Using references -> Not recommended because can cause maximum confusion:
+//Using references -> Not recommended because can cause maximum confusion: https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/#menu-item-146724
 
  void MoveNode(struct ListNode **destNode, struct ListNode **sourceNode)
  {
