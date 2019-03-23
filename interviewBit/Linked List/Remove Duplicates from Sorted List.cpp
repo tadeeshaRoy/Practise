@@ -23,6 +23,8 @@ https://www.youtube.com/watch?v=j3Kd06VfJhw
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+//iterative approach
 ListNode* Solution::deleteDuplicates(ListNode* A) {
     struct ListNode* head = A;
     struct ListNode* current = head, *next_next;
@@ -43,3 +45,7 @@ ListNode* Solution::deleteDuplicates(ListNode* A) {
     }
     return head;
 }
+
+//Recursive approach
+
+// https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/#highlighter_793187
