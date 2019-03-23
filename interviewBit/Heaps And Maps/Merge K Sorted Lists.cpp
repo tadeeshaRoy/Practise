@@ -13,6 +13,8 @@ will result in
 
 In the solution below, at a time, min heap will contain only k elements, not (number of elements in each k lists)*k 
 So memory overflow is avoided ;)
+
+reference: https://github.com/p4thakur/100DaysOfDataStructureAlgorithm/blob/master/Heap/Merge%20k%20sorted%20linked%20lists
 */
 
 /**
