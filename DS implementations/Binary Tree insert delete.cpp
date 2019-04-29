@@ -119,5 +119,10 @@ int main()
 References:
 
 https://gist.github.com/mycodeschool/44e1a9183ab0e931f729
+
+https://www.youtube.com/watch?v=COZK7NATh4k
+
 https://gist.github.com/mycodeschool/9465a188248b624afdbf
+
+https://www.youtube.com/watch?v=gcULXE7ViZw
 */
