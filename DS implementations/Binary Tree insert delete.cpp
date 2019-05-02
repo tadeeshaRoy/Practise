@@ -90,7 +90,7 @@ TreeNode* deleteNode(TreeNode* root, int val)
         {
             TreeNode* temp = FindMin(root->right,val); //not directly root->data = minimum value because need to pass this node for deletion
             root->data = temp->data;
-            root->right = deleteNode(root->right,val);
+            root->right = deleteNode(root->right,temp->data);
         }
     }
     return root;
