@@ -1,4 +1,7 @@
 /*
+
+Check this for priority queue: https://stackoverflow.com/questions/19535644/how-to-use-the-priority-queue-stl-for-objects/33161479#answer-33161479
+
 Merge k sorted linked lists and return it as one sorted list
 
 Example :
