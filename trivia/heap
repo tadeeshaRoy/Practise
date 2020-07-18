@@ -1,3 +1,7 @@
+Height if number of nodes are given : floor(log n)  [height: O(log n)]. Leaves go from floor(n/2) + 1 to n.
+
+Heapify compares two elements at a particular height, hence time complexity is O(2 * log n) = O(log n) = space complexity since recursive calls are made O(log n) times.
+
 If array is in ascending order, it is in min heap.
 If array is in descending order, it is in max heap.
 
@@ -7,3 +11,24 @@ Arr[(2*i)+1]	Returns the left child node
 Arr[(2*i)+2]	Returns the right child node
 
 The traversal method use to achieve Array representation is Level Order
+
+Heap is an almost complete binary tree (leaves present in last or last but one level). Maximum number of nodes at a particular height: 2^(h+1) - 1.
+
+Time complexity for Build Heap is O(n). 
+
+sumation from 0 to log n of [ceil of {n/(2^(h+1))}]*O(h) = O(n)
+
+Time complexity for Build Heap is O(log n) -> max space in extra space(stack) at any instant is when heapify is called on root which requires O(log n) space.
+
+** So to build a heap we need space of O(log n) and time of O(n)
+
+Optional operations for max Heaps (vice versa for min heap):
+        a. find max -> O(1)
+        b. delete max -> O(log n)
+        c. insert -> O(log n) [insert at end (O[1)) then heapify or add INT_MIN at end and increase it to inserted value and heapify]
+        d. increase/decrease -> O(log n)
+        
+Some operations for suitable for max Heaps (vice versa for min heap): 
+        a. find min -> O(n) [find only in leaves but that will also be n/2 nodes so O(n/2) = O(n)]
+        b. search -> O(n)
+        c. delete any -> search + build heap = O(n+n) = O(n)
