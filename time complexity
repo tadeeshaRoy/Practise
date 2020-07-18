@@ -1,0 +1,6 @@
+1. Binary Search -> O(log2n)
+2. Sorting:
+  a. Selection, bubble and inserting sort -> O(n2)
+  b. Merge sort -> O(n log n)
+  c. Quick sort -> O(nlogn) in average case and O(n2) in worst case.
+  
